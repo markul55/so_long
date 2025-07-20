@@ -1,5 +1,4 @@
 #include "so_long.h"
-#include <stdio.h>
 
 int	main(int ac, char **av)
 {
@@ -10,10 +9,8 @@ int	main(int ac, char **av)
 	{
 		game.map.map = read_map(av[1], &game);
 		find_player(&game);
-		printf("dupa\n");
 		if (error_win_size(&game))
 			close_window(&game);
-		printf("dupa\n");
 		if (checking_all_the_things_that_need_to_be_checked(&game, av[1]))
 		{
 			if (error_map())
@@ -29,4 +26,5 @@ int	main(int ac, char **av)
 		mlx_loop(game.mlx);
 		return (0);
 	}
+	error_arg();
 }

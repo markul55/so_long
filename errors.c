@@ -17,3 +17,9 @@ int	error_win_size(t_game *game)
 	}
 	return(0);
 }
+
+int	error_arg(void)
+{
+	write(2, "Error\nWrong number of arguments\n", 32);
+	return (1);
+}

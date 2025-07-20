@@ -72,5 +72,6 @@ int				check_map_size(t_game *game);
 int				error_map(void);
 int				error_win_size(t_game *game);
 void			free_map(char **map);
+int				error_arg(void);
 
 #endif

@@ -1,5 +1,5 @@
 #include "so_long.h"
-#include <stdio.h>
+
 
 int	check_char(t_game *game)
 {
@@ -135,5 +135,6 @@ int	checking_all_the_things_that_need_to_be_checked(t_game *game, char *path)
 		free_map(copy);
 		return (1);
 	}
+	free_map(copy);
 	return (0);
 }

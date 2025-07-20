@@ -1,5 +1,4 @@
 #include "so_long.h"
-#include <stdio.h>
 
 void	find_player(t_game *game)
 {
